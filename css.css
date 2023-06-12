@@ -1,0 +1,167 @@
+*{
+    margin:0;
+    padding:0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: bisque;
+}
+:root{
+    --navbar-height:59px;
+}
+#navbar{
+    position: sticky;
+    top: 0px;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+}
+/* logo and image */
+#logo img{
+    margin: 10px 34px;
+    height: 50px;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    display: block;
+    padding: 5px 40px;
+    border-radius: 40px;
+    text-decoration: none;
+    color:black;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 22px;
+    height: 385px;
+    align-items: center;
+    justify-content: center;
+}
+.btn{
+    background-color: brown;
+    color:white;
+    padding: 2px 22px;
+    margin: 17px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    /* border:2px solid white; */
+}
+.btn:hover{
+    color: rgb(16, 12, 12);
+    background-color: brown;
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('8.jpg') no-repeat center/cover;
+    top: 0px;
+    left: 0px;
+    height: 59%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+#home h1{
+    color: rgb(198, 55, 79);
+    text-align: center;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+}
+#services{
+    margin: 34px;
+    display: flex;
+
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 34px;
+    border-radius: 28px;
+    margin: 3px 6px;
+    background-color: rgb(232, 242, 242);
+}
+#services .box img{
+    margin: auto;
+    display: block;
+    height: 180px;
+
+}
+#clientsection{
+
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+     height: 120px; 
+}
+#Contact{
+    position: relative;
+}
+#Contact::before{
+    content: "";
+    position: absolute;
+    height: 102%;
+    width: 100%;
+    z-index: -1;
+    opacity: 2;
+    background: url('1.jpg') no-repeat center center/cover;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width:100%;
+    padding:0.3rem ;
+    border-radius: 10px;
+}
+footer{
+    text-align: center;
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+    text-align: center;
+}
+.h-secondary{
+    font-size: 1.8rem;
+text-align: center;
+}
