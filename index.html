@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Food delivery|www.OnlineFood.com
+    </title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" media="screen and (max-width:1170px)" href="phone.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="logo.jpg" alt="">
+        </div>
+        <ul>
+            <li class="item"><a href="#home"> Home</a></li>
+            <li class="item"><a href="#services-container">Services </a></li>
+            <li class="item"><a href="#clientsection">clients</a></li>
+            <li class="item"><a href="#Contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h1 class="h-primary">Welcome to my page</h1>
+        <!-- <p>Indulge in a symphony of flavors at our fast-food haven where every bite is a journey</p> -->
+        <!-- <p> to satisfaction and every craving finds its delicious match</p> -->
+        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, officia?</p> -->
+        <button class="btn">Order Now</button>
+    </section>
+    <section id="services-container">
+        <h1 class="h-primary center">Our services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="5.jpg" alt="">
+                <h2 class="h-secondary"><u><i>Spici Food</i></u></h2>
+                <p class="center">Hot spici food dishies are on the trending. Young generation like to eat.Indulge your
+                    taste buds in a tantalizing symphony of flavors with our spicy delights, where each bite ignites a
+                    culinary adventure that dances on your palate. </p>
+            </div>
+            <div class="box">
+                <img src="9.jpeg" alt="">
+                <h2 class="h-secondary"><u><i>Russian Salad</i></u></h2>
+                <p class="center">Indulge your taste buds with our vibrant and fresh salads, bursting with crisp greens,
+                    colorful vegetables, and tantalizing dressings. Elevate your dining experience with our wholesome
+                    salad creations that promise a delightful symphony of flavors in every bite.
+                </p>
+            </div>
+            <div class="box">
+                <img src="11.avif" alt="">
+                <h2 class="h-secondary"><u><i>Food Ordering</i></u></h2>
+                <p class="center">We provide you a very fast food delivery facilty. You order your food from your house your
+                    order is delivered to your house. </p>
+            </div>
+        </div>
+    </section>
+    <section id="clientsection">
+        <h1 class="h-primary center">Our Clients</h1>
+        <div id="clients">
+            <div >
+                <img src="logo7.png" alt="">
+            </div>
+            <div >
+                <img src="2.avif" alt="">
+            </div>
+            <div >
+                <img src="1.webp" alt="">
+            </div>
+            <!-- <div class="clients-items"> -->
+                <!-- <img src="logo7.png" alt=""> -->
+            <!-- </div> -->
+            <div>
+                <img src="logo8.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section id="Contact">
+        <h1 class="h-primary center">
+            Contact us
+        </h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="userName">
+                        <h2><i>Name:-</i></h2>
+                    </label>
+                    <input type="text" required id="userName" placeholder="Enter your Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">
+                        <h2><i>Email:-</i></h2>
+                    </label>
+                    <input type="email" name="email" id="email" placeholder="Enter your Email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">
+                        <h2><i>Phone:-</i></h2>
+                    </label>
+                    <input type="tel" name="phone" required id="phone" placeholder="Enter your phone">
+                </div>
+                <div class="form-group">
+                    <label for="message">
+                        <h2><i>Massage:-</i></h2>
+                    </label>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter Massage"></textarea>
+                </div>
+                <div class="form-group">
+                    <button class="btn" onclick="senddata()">Submit</button>
+                </div>
+            </form>
+        </div>
+        <br>
+    </section>
+
+    <footer>
+        <div class="center">
+            <b><i>copyright &copy; www.OnlineFood.com. All rights reserved!</i></b>
+        </div>
+    </footer>
+</body>
+
+</html>
+<script>
+    userName = document.getElementById("userName").value
+    function senddata() {
+        console.log(userName)
+    }
+</script>
