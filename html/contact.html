@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us|Best Food delivery|www.OnlineFood.com</title>
+    <link rel="stylesheet" href="/style/contact.css">
+    <!-- <link rel="stylesheet" href="navbar.css"> -->
+    <link rel="stylesheet" href="/style/phone.css">
+</head>
+<body>
+  <nav id="navbar">
+    <div id="logo">
+        <img src="/assets/logo.png" alt="">
+    </div>
+    <ul>
+        <li class="item"><a href="/html/index.html"> Home</a></li>
+        <li class="item"><a href="/html/services (1).html">Services </a></li>
+        <li class="item"><a href="/html/About us.html">About Us</a></li>
+        <li class="item"><a href="/html/contact.html">Contact</a></li>
+    </ul>
+</nav>
+    <div class="contactForm">
+        <h1>Contact me for Work/General Enquires</h1>
+        <form>
+          <div class="mb-3">
+            <label for="clientname" class="form-label">Enter Name:</label>
+            <input type="text" class="form-control" id="clientname" aria-describedby="name" required>
+          </div>
+            <div class="mb-3">
+              <label for="clientemail" class="form-label">Email Address:</label>
+              <input type="email" class="form-control" id="clientemail" aria-describedby="emailHelp" required>
+            </div>
+            <!-- <div class="mb-3">
+              <label for="clientphone" class="form-label">Phone Number:</label>
+              <input type="password" class="form-control" id="clientphone">
+            </div> -->
+            <!-- <div id="emailHelp" class="form-text">We'll never share your email&Phone with anyone else.</div> -->
+            <div class="mb-3">
+              <label for="massage" class="form-label">Write About Your Order:</label>
+              <input type="text" class="form-control" id="massage" required>
+            </div>
+            <div class="mb-3" id="form-check">
+              <input type="checkbox" class="form-check-input" id="isclient">
+              <label class="form-check-label" for="isclient">Click And Confirm Your Order</label>
+            </div>
+            <button href="#" class="read3" onclick="logData()" type="submit">Submit</button>
+          </form>
+      </div>
+    </div>
+
+</body>
+<footer>
+        <b><i>copyright &copy; www.OnlineFood.com. All rights reserved!</i></b>
+</footer>
+</html>
+<script>
+   
+    function sendData() {
+      userName = document.getElementById("clientname").value
+      userEmail=document.getElementById("clientemail").value
+      usermassage=document.getElementById("massage").value
+
+        console.log("Name is " + userName)
+        console.log("Email is " +userEmail)
+        console.log("Order is " +usermassage)
+
+    }
+    function logData(){
+      sendData()
+      if(sendData){
+        alert("Data Send Successfully!");
+        clearForm()
+      }
+    }
+  function  clearForm(){
+       document.getElementById("clientname").value=" "
+       document.getElementById("clientemail").value=" " 
+       document.getElementById("massage").value=" " 
+
+
+    }
+</script>

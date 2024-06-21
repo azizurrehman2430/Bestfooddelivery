@@ -6,12 +6,11 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background-color: rgb(247, 242, 235);
+    background-color: #0a173b;
 }
 :root{
     --navbar-height:59px;
 }
-
 #navbar{
     /* position: sticky; */
     top: 0px;
@@ -23,7 +22,7 @@ body{
 /* logo and image */
 #logo img{
     margin: 10px 34px;
-    height: 50px;
+    height: 69px;
     border-radius: 50%;
 }
 #navbar ul{
@@ -45,15 +44,23 @@ body{
     font-size: 1.3rem;
 }
 #navbar ul li a{
+    font-size: 33px;
     display: block;
     padding: 5px 40px;
     border-radius: 40px;
     text-decoration: none;
     color:rgb(15, 3, 3);
+    background: -webkit-linear-gradient(#060606, #16c3cf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
 }
 #navbar ul li a:hover{
     color: black;
     background-color: white;
+    box-shadow: 0 0 5px #0ef,
+    0 0 25px #0ef,  0 0 50px #0ef,  
+    0 0 100px #0ef,  0 0 200px #0ef;
 }
 #home{
     display: flex;
@@ -83,23 +90,24 @@ body{
 #home::before{
     content: "";
     position: absolute;
-    background: url('10.jpg') no-repeat center/cover;
+    background: url('/assets/9.jpeg') no-repeat center/cover;
     top: 0px;
     left: 0px;
-    height: 59%;
+    height: 100%;
     width: 100%;
-    z-index: -1;
+    z-index: -3;
     opacity: 0.89;
 }
+
 #home h1{
-    color: rgb(41, 34, 35);
+    color: white;
     text-align: center;
 }
-#home p{
+/* #home p{
     color: rgb(247, 241, 241);
     text-align: center;
     font-size: 1.5rem;
-}
+} */
 #services{
     margin: 34px;
     display: flex;
@@ -117,64 +125,65 @@ body{
     margin: auto;
     display: block;
     height: 120px;
-
-}
-/* #clientsection{ */
-
-/* } */
-#clients{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#clients img{
-     height: 120px; 
-     width: 80%; 
-     aspect-ratio: 3/2;
-     object-fit:contain;
-     mix-blend-mode: multiply;
-     filter: contrast(1);
-     /* filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6)); */
-
-}
-#Contact{
-    position: relative;
-}
-#Contact::before{
-    content: "";
-    position: absolute;
-    height: 102%;
-    width: 100%;
-    z-index: -1;
-    opacity: 2;
-    background: url('15.jpg') no-repeat center center/cover;
-}
-#contact-box{
-    display: flex;
-    justify-content: right;
-    align-items: right;
-    padding-bottom: 54px;
-    padding-right: 54px;
-}
-#contact-box input,
-#contact-box textarea{
-    width:100%;
-    /* color: white; */
-    padding:0.3rem ;
-    border-radius: 10px;
-}
-footer{
-    text-align: center;
-    background: black;
-    color: white;
-    padding: 9px 20px;
 }
 .h-primary{
-    font-size: 3.8rem;
+    margin-bottom: 30px;
+    margin-left: -33rem;
+    margin-top: 8rem;
+    background: -webkit-linear-gradient(#060606, #16c3cf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 4.4rem;
     padding: 12px;
-    text-align: center;
+    /* text-align: center; */
 }
+.h-primary:hover{
+    /* background-color: #081b29; */
+    /* box-shadow:  0 5px rgb(218, 228, 228),
+    0 0 15px cyan,0 0 50px cyan,
+    0 0 100px rgb(62, 205, 29),0 0 200px rgb(48, 76, 170) ; */
+
+}
+
 .h-secondary{
     font-size: 1.8rem;
 text-align: center;
+}
+
+.read1 {
+    display: inline-block;
+    padding: 12px 28px;
+    margin-left: -23rem;
+    margin-top: -12px;
+    margin-bottom: 54px;
+    background-color: #0ef;
+    background: -webkit-linear-gradient(#060606, #16c3cf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+        border-radius: 40px;
+    font-size: 20px;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0;
+    animation: slideRead 1s ease forwards;
+    animation-delay: 1s;
+    box-shadow: 0 0 5px #060606, 0 0 10px #16c3cf
+}
+@keyframes slideRead{
+    0%{ 
+        transform: translateY(100px);
+        opacity: 0;
+      }
+      100%{
+        transform: translateY(0px);
+        opacity: 1;
+      }
+}
+.read1:hover{
+    transform: translatex(-30px);
+    /* box-shadow:  0 5px rgb(218, 228, 228),
+    0 0 15px cyan,0 0 50px cyan,
+    0 0 100px rgb(62, 205, 29),0 0 200px rgb(48, 76, 170) ;  */
 }

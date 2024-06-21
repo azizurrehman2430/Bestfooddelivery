@@ -1,0 +1,235 @@
+body{
+    /* background-color: rgb(64, 81, 83); */
+    background-color: #081b29;
+    /* background: url('cont.jpg') no-repeat center/cover; */
+
+}
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --navbar-height:9px;
+}
+
+    #navbar{
+        /* position: sticky; */
+        top: 0px;
+    }
+    #navbar{
+        display: flex;
+        align-items: center;
+    }
+    /* logo and image */
+    #logo img{
+        margin: 10px 34px;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+
+    #logo img:hover{
+    box-shadow: 0 0 5px #0ef,
+    0 0 25px #0ef, 0 0 50px #0ef,
+    0 0 100px #0ef, 0 0 200px #0ef;
+    }
+    #navbar ul{
+        display: flex;
+    }
+    #navbar::before{
+        content: "";
+        /* background-color: white; */
+        background-color: #081b29;
+        position:absolute;
+        top: 0px;
+        left: 0px;
+        height: 0%;
+        width: 100%;
+        z-index: -1;
+        /* opacity: 0.1; */
+    }
+    #navbar ul li{
+        list-style: none;
+        font-size: 1.5rem;
+    }
+    #navbar ul li a{
+        display: block;
+        padding: 5px 40px;
+        border-radius: 10px;
+        text-decoration: none;
+        /* color:rgb(15, 3, 3); */
+        color: white;
+    }
+    #navbar ul li a:hover{
+        /* text-decoration: underline; */
+        color: black;
+        background-color: white;
+        box-shadow: 0 0 5px #0ef,
+        0 0 25px #0ef,  0 0 50px #0ef,  
+        0 0 100px #0ef,  0 0 200px #0ef;
+    }
+.services{
+    color: aliceblue;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 4rem;
+}
+
+.sub-title{
+    text-align: center;
+    font-size: 60px;
+    padding-bottom: 22px;
+}
+
+.sub-title span{
+    color: #0ef;
+}
+
+.container{
+    padding:8px;
+}
+p{
+    font-size:medium;
+    line-height: 1.4;
+}
+
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(259px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.sub-title1{
+    /* text-align: center; */
+    font-size: 60px;
+    /* padding-bottom: 22px; */
+}
+
+.sub-title1 span{
+    color: #0ef;
+}
+
+
+.services-list div{
+    background-color: transparent;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 13px;
+    border-right: 10px;
+    border-radius: 20px;
+    transition: background .5s , transform .5s;
+    box-shadow: 1px 1px 20px #012290f7,
+    1px 1px 40px #012290f7;
+}
+
+.services-list div i{
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.services-list div h2{
+    font-size: 45px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.services-list div a {
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.delivery{
+    margin-left: 334px;
+    width: 752px;
+
+}
+.delivery p{
+    margin-left: 135px;
+    margin-right: 121px;
+    font-size: medium;
+    line-height: 1.4;
+}
+.read{
+    display: inline-block;
+    padding: 12px 28px;
+    background: #0ef;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0;
+    animation: slideRead 1s ease forwards;
+    animation-delay: 1s;
+    box-shadow: 0 0 5px #0ef,
+    0 0 15px #0ef;
+}
+@keyframes slideRead{
+    0%{ 
+        transform: translateY(100px);
+        opacity: 0;
+      }
+      100%{
+        transform: translateY(0px);
+        opacity: 1;
+      }
+}
+.read:hover{
+    box-shadow:  0 5px cyan,
+    0 0 25px cyan,0 0 50px cyan,
+    0 0 100px cyan,0 0 200px cyan ;
+}
+ 
+.services-list div:hover{
+    transform: translateY(-30px)
+}
+.read2{
+margin-left: 259px;
+display: inline-block;
+padding: 15px 100px;
+background: #0ef;
+border-radius: 40px;
+font-size: 47px;
+color: #081b29;
+letter-spacing: 1px;
+text-decoration: none;
+font-weight: 600;
+opacity: 0;
+animation: slideRead 1s ease forwards;
+animation-delay: 1s;
+box-shadow: 0 0 5px #0ef,
+0 0 15px #0ef;
+}
+@keyframes slideRead{
+0%{ 
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+.read1:hover{
+box-shadow:  0 5px cyan,
+0 0 25px cyan,0 0 50px cyan,
+0 0 100px cyan,0 0 200px cyan ;
+}
+
+img{
+    margin-left: 230px;
+    height: 186px;
+    width: 299px;
+}
+footer{
+    text-align: center;
+    /* background: black; */
+    color: white;
+    padding: 9px 20px;
+}
