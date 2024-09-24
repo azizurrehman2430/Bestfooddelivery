@@ -8,26 +8,25 @@ html{
     scroll-behavior: smooth;
 }
 :root{
-    --navbar-height:9px;
+    --navbar-height:0px;
 }
-
-    #navbar{
-        /* position: sticky; */
+ #navbar{
+         position:relative; 
         top: 0px;
     }
-    #navbar{
+ #navbar{
         display: flex;
         align-items: center;
     }
-    /* logo and image */
-    #logo img{
-        margin: 10px 34px;
+    /* logo and image  */
+ #logo img{
+        margin-left: 10px 34px;
         width: 150px;
         height: 150px;
         border-radius: 50%;
     }
 
-    #logo img:hover{
+ #logo img:hover{
     box-shadow: 0 0 5px #0ef,
     0 0 25px #0ef, 0 0 50px #0ef,
     0 0 100px #0ef, 0 0 200px #0ef;
@@ -37,7 +36,7 @@ html{
     }
     #navbar::before{
         content: "";
-        /* background-color: white; */
+         background-color: white; 
         background-color: #081b29;
         position:absolute;
         top: 0px;
@@ -45,7 +44,7 @@ html{
         height: 0%;
         width: 100%;
         z-index: -1;
-        /* opacity: 0.1; */
+        opacity: 0.1; 
     }
     #navbar ul li{
         list-style: none;
@@ -56,17 +55,17 @@ html{
         padding: 5px 40px;
         border-radius: 10px;
         text-decoration: none;
-        /* color:rgb(15, 3, 3); */
+        color:rgb(15, 3, 3);
         color: white;
     }
     #navbar ul li a:hover{
-        /* text-decoration: underline; */
+        text-decoration: none; 
         color: black;
         background-color: white;
-        box-shadow: 0 0 5px #0ef,
+         box-shadow: 0 0 5px #0ef,
         0 0 25px #0ef,  0 0 50px #0ef,  
         0 0 100px #0ef,  0 0 200px #0ef;
-    }
+    } 
 .services{
     color: aliceblue;
     font-size: 20px;

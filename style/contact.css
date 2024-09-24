@@ -7,7 +7,7 @@ body{
     /* background: url('1.jpeg') no-repeat center/cover; */
     /* background-color: #041019; */
     /* background-attachment: fixed; */
-    background: url('/assets/fc2.webp') no-repeat center/cover;
+    background: url('/assets/fc2.webp') no-repeat center/cover ;
 }
 #navbar{
     /* position: sticky; */
@@ -99,7 +99,7 @@ box-shadow: 0 0 5px #0ef,
     padding: 4px;
 }
 
-.read3{
+.btn-box{
     display: inline-block;
     padding: 12px 28px;
     margin-top: 15px;
@@ -114,8 +114,9 @@ box-shadow: 0 0 5px #0ef,
     opacity: 0;
     animation: slideRead 1s ease forwards;
     animation-delay: 1s;
-    box-shadow: 0 0 5px #0ef,
-    0 0 10px #0ef;
+    background: -webkit-linear-gradient(#060606, #16c3cf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 @keyframes slideRead{
     0%{ 
@@ -127,10 +128,12 @@ box-shadow: 0 0 5px #0ef,
         opacity: 1;
       }
 }
-.read3:hover{
-    box-shadow:  0 5px cyan,
-    0 0 25px cyan,0 0 50px cyan,
-    0 0 100px cyan,0 0 200px cyan ;
+.btn-box:hover{
+    color: black;
+    background-color: white;
+    /* box-shadow: 0 0 5px #0ef,
+    0 0 25px #0ef,  0 0 50px #0ef,  
+    0 0 100px #0ef,  0 0 200px #0ef; */
 }
  
 #emailHelp{

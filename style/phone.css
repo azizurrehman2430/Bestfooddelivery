@@ -1,50 +1,4 @@
-/* navigation */
-#navbar{
-    flex-direction: column;
-}
-#navbar ul li a{
-    font-size: 2rem;
-    padding: 0px 23px;
-    padding-bottom: 8px;
-    border-radius: 23px;
-    margin-top: -10px;
-}
-/* Home section */
-#home{
-    height: 370px;
-    padding: 3px 68px;
-}
-#home::before{
-    height: 480px;
-}
-/* services section */
-#services{
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-#services .box{
 
-}
-/* clients section */
-#clients{
-    flex-wrap: wrap;
-}
-#clients img{
-    width: 66px;
-    padding: 2px 6px ;
-    /* mix-blend-mode: color-burn; */
-}
-/* contact section */
-
-/* footer section */
-
-/* utility classes */
-
-.btn{
-    font-size: 13px;
-    padding: 4px 8px;
-    
-}
 
 @media screen and (max-width: 600px)
 {
@@ -66,25 +20,14 @@
         justify-content: center;
     }
     .read1 {
-        display: inline-block;
         padding: 12px 28px;
         margin-left: -39px;
         margin-top: -12px;
         margin-bottom: 54px;
-        background-color: #0ef;
-        background: -webkit-linear-gradient(#060606, #16c3cf);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-            border-radius: 40px;
+        /* background-color: #0ef; */
+        border-radius: 50px;
         font-size: 11px;
-        color: #081b29;
-        letter-spacing: 1px;
-        text-decoration: none;
-        font-weight: 600;
-        opacity: 0;
-        animation: slideRead 1s ease forwards;
-        animation-delay: 1s;
-        box-shadow: 0 0 5px #060606, 0 0 10px #16c3cf
+        
     }
  #home::before{
     height: 100%;
@@ -118,29 +61,26 @@ img {
     font-size: medium;
     margin-right: -22px;
     line-height: 1.4;
+}  
+.read2 {
+        display: inline-block;
+        padding: 12px 28px;
+        margin-left: -19px;
+        margin-top: -12px;
+        margin-bottom: 54px;
+        background-color: #0ef;
+        border-radius: 40px;
+        font-size: 11px;
+        color: #081b29;
+        letter-spacing: 1px;
+        text-decoration: none;
+        font-weight: 600;
+        opacity: 0;
+        animation: slideRead 1s ease forwards;
+        animation-delay: 1s;
+
 }
-.read2{
-    display: inline-block;
-    padding: 12px 28px;
-    margin-left: -39px;
-    margin-top: -12px;
-    margin-bottom: 54px;
-    background-color: #0ef;
-    background: -webkit-linear-gradient(#060606, #16c3cf);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    border-radius: 40px;
-    font-size: 11px;
-    color: #081b29;
-    letter-spacing: 1px;
-    text-decoration: none;
-    font-weight: 600;
-    opacity: 0;
-    animation: slideRead 1s ease forwards;
-    animation-delay: 1s;
-    box-shadow: 0 0 5px #060606, 0 0 10px #16c3cf
-}
-/* contact us */
+/*---------------------- contact us -----------------------*/
 .contactForm{
     display: flex;
     flex-direction: column;
@@ -165,57 +105,30 @@ img {
     width: 31vh;
 }
 .read3{
-    display: inline-block;
     padding: 12px 28px;
     margin-bottom: 47px;
-    background: #0ef;
     border-radius: 40px;
     font-size: 10px;
-    color: #081b29;
-    letter-spacing: 1px;
-    text-decoration: none;
-    font-weight: 600;
-    opacity: 0;
-    animation: slideRead 1s ease forwards;
-    animation-delay: 1s;
-    box-shadow: 0 0 5px #0ef,
-    0 0 10px #0ef;
 }
 .home{
     position: relative;
     width: 100%;
     justify-content: space-between;
     height: 77vh;
-    /* background: url(profile.png) no-repeat; */
     background-size: cover;
     background-position: center;
-    display: flex;
-    /* justify-content: space-around; */
     align-items: center;
     padding: 70px 10% 0;
 }
 
 .devPic img {
-    /* border: 2px solid #0ef; */
-    display: block;
     flex-direction: right;
     height: 21vh;
     width: 157px;
     justify-content: center;
     align-items: center;
-    background: transparent;
-    border: 4px solid #0ef;
     border-radius: 50%;
     font-size: 15px;
-    color: #0ef;
-    text-decoration: none;
-    margin: 73px 5px 30px -21px;
-    box-shadow: 0 0 70px #0ef;
-}
-.devPic img:hover{
-    box-shadow: 0 0 5px cyan,
-    0 0 25px cyan,0 0 50px cyan,
-    0 0 100px cyan,0 0 200px cyan ;
 }
 .devPic1 img {
     /* border: 2px solid #0ef; */
@@ -274,10 +187,6 @@ home-content h2 {
     font-weight: 500px;
     margin: 4px 0px;
     margin-left: -1px;
-    /* color: rgb(156, 235, 203); */
-    opacity: 0;
-    margin-bottom: 4px;
-    animation: slidebottom 2s ease forwards;
 }
 
 

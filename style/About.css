@@ -11,7 +11,7 @@ body{
 }
  
 #navbar{
-    /* position: sticky;  */
+     position: relative;  
     top: 0px; 
 } 
  #navbar{
@@ -19,7 +19,7 @@ body{
     display: flex;
     align-items: center;
 }
-/* logo and image */
+/* logo and image  */
  #logo img{
     margin: 10px 34px;
     height: 100px;
@@ -57,7 +57,7 @@ body{
     box-shadow: 0 0 5px #0ef,
     0 0 25px #0ef,  0 0 50px #0ef,  
     0 0 100px #0ef,  0 0 200px #0ef;
-}
+} 
 
 .header{
     position: fixed;
